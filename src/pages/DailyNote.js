@@ -9,4 +9,8 @@ function DailyNote() {
   );
 }
 
+<<<<<<< HEAD
 export default DailyNote;
+=======
+export default DailyNote;
+>>>>>>> 09a637871ca0e92c45125ecd8501d3aedab4bed6

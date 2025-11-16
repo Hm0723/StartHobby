@@ -45,11 +45,9 @@ function Navbar() {
           {menuOpen ? <IoClose size={28} /> : <GiHamburgerMenu size={28} />}
         </div>
 
-        {/* Middle: Navigation Links */}
-        <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
-          {/* ... your other links ... */}
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/twister">Twister</Link></li>
+      <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/twister">Twister</Link></li>
           <li className="dropdown">
             <span className="dropbtn">Explore ▾</span>
             <div className="dropdown-content">
@@ -57,10 +55,10 @@ function Navbar() {
               <Link to="/daily-note">Daily Note</Link>
             </div>
           </li>
-          <li><Link to="/corporate">For Corporate</Link></li>
-          <li><Link to="/hobby-providers">Hobby Providers</Link></li>
-          <li><Link to="/shop">Shop</Link></li>
-        </ul>
+        <li><Link to="/corporate">For Corporate</Link></li>
+        <li><Link to="/hobby-providers">Hobby Providers</Link></li>
+        <li><Link to="/shop">Shop</Link></li>
+      </ul>
 
         {/* Right side: Profile section */}
         <div className={`navbar-profile ${menuOpen ? "open" : ""}`}>

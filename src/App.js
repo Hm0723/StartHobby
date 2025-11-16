@@ -6,6 +6,7 @@ import Twister from "./pages/Twister";
 import Blog from "./pages/Blog";
 import DailyNote from "./pages/DailyNote";
 import Corporate from "./pages/Corporate";
+import DailyNote from "./pages/DailyNote";import Corporate from "./pages/Corporate";
 import HobbyProviders from "./pages/HobbyProviders";
 import Shop from "./pages/Shop";
 import Quiz from "./pages/Quiz";
@@ -45,9 +46,23 @@ const AppContent = () => {
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/twister" element={<Twister />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/daily-note" element={<DailyNote />} />
+            <Route path="/corporate" element={<Corporate />} />
+            <Route path="hobby-providers" element={<HobbyProviders />} />
+            <Route path="shop" element={<Shop />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+
   );
 }
 
