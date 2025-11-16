@@ -43,27 +43,3 @@ const AppContent = () => {
     </>
   );
 };
-
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/twister" element={<Twister />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/daily-note" element={<DailyNote />} />
-            <Route path="/corporate" element={<Corporate />} />
-            <Route path="hobby-providers" element={<HobbyProviders />} />
-            <Route path="shop" element={<Shop />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
-
-  );
-}
-
-export default App;
