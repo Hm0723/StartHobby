@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../styles/Home.css';
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
       <div className="quiz-content">
         <div className="quiz-header">
           <div className="quizqn">Looking for a Hobby?</div>
-          <div className="quizbtn">Start Now</div>
+          <Link to="/quiz" className="quizbtn">Start Now</Link>
         </div>
         <div className="quizbio">
           Do our StartHobby Quiz to find out which hobby is for you!

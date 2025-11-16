@@ -7,7 +7,7 @@
   color: black;
   height: 60px;
   position: relative;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navbar-left img {
@@ -32,6 +32,20 @@
 
 .navbar a:hover {
   background-color: #FFE6C5;
+}
+
+.logout-button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #FFE6C5;
+}
+
+/* Override hover effect for the logo link */
+.logo-link:hover {
+  background-color: transparent !important;
 }
 
 /* New and modified styles for the profile section */
@@ -95,5 +109,79 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+/* ---------- DROPDOWN (desktop default) ---------- */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: 0;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+}
+
+.dropbtn:hover {
+  background-color: #FFE6C5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  z-index: 200;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #f4f4f4;
+}
+
+/* show on hover (desktop) */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ---------- MOBILE TWEAKS ---------- */
+@media (max-width: 768px) {
+  .navbar-links .dropdown {
+    width: 100%;
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
+
+  .navbar-links .dropdown .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .navbar-links .dropdown .dropdown-content a {
+    padding: 0.6rem 1rem;
+  }
+
+  .dropbtn {
+    width: 100%;
+    text-align: center;
   }
 }

@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Nunito+Sans:wght@400;600&display=swap');
+
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: white;
 }
 
 .content { 
-  padding: 2rem; text-align: center; 
+  text-align: center; 
 } 
 
 .title { 
